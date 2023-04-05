@@ -36,7 +36,7 @@ function App() {
       <>
         <Navbar />
         <Switch>
-          <Route path='/' element={<Home />} />
+          {/* <Route path='/' element={<Home />} /> */}
           <Route path='/login' element={<LoginForm />} />
           <Route path='/signup' element={<SignupForm />} />
           <Route path='/searchbooks' element={<SearchBooks />} />
