@@ -7,13 +7,13 @@ import {
   Col
 } from 'react-bootstrap';
 
-import { getMe, deleteBook } from '../utils/API';
+// import { getMe, deleteBook } from '../utils/API';
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 
 import { useQuery } from '@apollo/client';
 import { useMutation } from '@apollo/client';
-import { GET_ME } from '../utils/queries';
+import { QUERY_ME } from '../utils/queries';
 import { REMOVE_BOOK } from '../utils/mutations';
 
 const SavedBooks = () => {
@@ -21,7 +21,7 @@ const SavedBooks = () => {
   // const userDataLength = Object.keys(userData).length;
 
   const [newRemoveBook, { error, data }] = useMutation(REMOVE_BOOK);
-  const { loading, queryData } = useQuery(GET_ME);
+  const { loading, queryData } = useQuery(QUERY_ME);
   const userData = queryData?.me || {}
 
   const handleDeleteBook = async (bookId) => {

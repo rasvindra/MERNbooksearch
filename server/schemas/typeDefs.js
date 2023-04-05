@@ -3,7 +3,7 @@ const typeDefs = `#graphql
      _id: ID
      username: String!
      email: String!
-     bookCount: Num
+     bookCount: String
      password: String
      savedBooks: [String]
     },
