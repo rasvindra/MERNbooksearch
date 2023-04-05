@@ -7,8 +7,9 @@ export const QUERY_USER_INFO = gql`
       username
       email
       savedBooks {
-        _id
         authors
+        token
+        _id
         description
         bookId
         image
@@ -26,8 +27,9 @@ export const QUERY_USER = gql`
       username
       email
       savedBooks {
-        _id
         authors
+        token
+        _id
         description
         bookId
         image
@@ -45,8 +47,9 @@ export const QUERY_ME = gql`
       username
       email
       savedBooks {
-        _id
         authors
+        token
+        _id
         description
         bookId
         image
@@ -56,3 +59,19 @@ export const QUERY_ME = gql`
     }
   }
 `;
+
+// export const QUERY_ME = gql`
+//     query me {
+//         me {
+//             _id
+//             username
+//             email
+//             savedBooks {
+//                 bookId
+//                 authors
+//                 description
+//                 title
+//             }
+//         }
+//     }
+// `

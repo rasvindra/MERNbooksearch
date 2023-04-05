@@ -39,9 +39,9 @@ function App() {
           {/* <Route path='/' element={<Home />} /> */}
           <Route path='/login' element={<LoginForm />} />
           <Route path='/signup' element={<SignupForm />} />
-          <Route path='/searchbooks' element={<SearchBooks />} />
+          <Route path='/' element={<SearchBooks />} />
           <Route path='/savebooks' element={<SavedBooks />} />
-          <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
+          <Route path='*' element={<h1 className='display-2'>Wrong page!</h1>} />
         </Switch>
       </>
     </Router>
