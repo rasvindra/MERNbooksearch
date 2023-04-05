@@ -38,4 +38,4 @@ rasvindra@hotmail.com <br/>
 "Deployed Link goes here"
 
 ## Screenshot
-"Screen shot goes here"
+![](./public/image/)
