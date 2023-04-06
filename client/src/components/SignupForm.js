@@ -26,7 +26,7 @@ const SignupForm = () => {
       event.stopPropagation();
     }
     try {
-      const {data} = await addUser({ variables: { username: userFormData.username, mail: userFormData.email, password: userFormData.password}});
+      const { data } = await addUser({ variables: { username: userFormData.username, email: userFormData.email, password: userFormData.password}});
       // Auth.login(data.addUser.token);
       console.log(data)
 
