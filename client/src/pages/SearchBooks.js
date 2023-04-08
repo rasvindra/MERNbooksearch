@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
   Container,
   Col,
+
   Form,
   Button,
   Card,
@@ -87,7 +88,7 @@ const SearchBooks = () => {
 
   return (
     <>
-      <div fluid className='text-light bg-dark pt-5'>
+      <div className='text-light bg-dark pt-5'>
         <Container>
           <h1>Search for Books!</h1>
           <Form onSubmit={handleFormSubmit}>
